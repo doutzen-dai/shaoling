@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>哨铃 · 下载与更新</title>
+<style>
+  :root{
+    --bg:#FCFBF9; --card:#fff; --line:#F0EAE4; --accent:#DE6A45;
+    --text:#2B2523; --muted:#8A807C; --warm:#FFF6EF; --warmline:#F3D9C4;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:22px 16px 40px;background:var(--bg);color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:560px;margin:0 auto}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px;margin-bottom:14px}
+  h1{font-size:22px;margin:0 0 4px;letter-spacing:.5px}
+  .ver{color:var(--accent);font-weight:700;font-size:15px;margin:6px 0 0}
+  .date{color:var(--muted);font-size:13px;font-weight:400;margin-left:8px}
+  .btn{
+    display:block;text-align:center;text-decoration:none;color:#fff;background:var(--accent);
+    padding:15px;border-radius:28px;font-weight:700;font-size:16px;margin:16px 0 8px;
+    box-shadow:0 6px 16px rgba(222,106,69,.22);
+  }
+  .btn:active{transform:translateY(1px)}
+  .hint{color:var(--muted);font-size:13px;text-align:center}
+  h2{font-size:15.5px;margin:0 0 10px;font-weight:700}
+  ul{margin:0;padding-left:20px}
+  li{margin:6px 0;font-size:14.5px;color:#4A423E}
+  details summary{cursor:pointer;font-size:15px;font-weight:700;list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{content:"▸";color:var(--accent);margin-right:8px}
+  details[open] summary::before{content:"▾"}
+  .old a{color:var(--accent);text-decoration:none;font-weight:600}
+  .old span{color:var(--muted);font-size:13px;margin-left:8px}
+  .old li{margin:10px 0}
+  .warm{background:var(--warm);border-color:var(--warmline)}
+  .warm h2{color:#8A3B1E}
+  .mirror a{color:var(--accent);font-weight:600;text-decoration:none}
+  .kbd{display:inline-block;background:#fff;border:1px solid var(--warmline);
+       border-radius:8px;padding:2px 8px;font-weight:700;color:var(--accent);font-size:14px}
+  .foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:22px;line-height:1.9}
+  .tag{display:inline-block;background:#E7F3E7;color:#2E7D32;font-size:12px;
+       padding:2px 10px;border-radius:20px;margin-left:8px;vertical-align:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ 最新版本 ============ -->
+  <div class="card">
+    <h1>哨铃</h1>
+    <div class="ver">v1.2.17<span class="date">2026-11-21</span><span class="tag">最新</span></div>
+    <a class="btn" href="shaoling-v1.2.17.apk" download>下载安装包（约 693KB）</a>
+    <div class="hint">覆盖安装即可，配置与提醒记录不会丢失</div>
+  </div>
+
+  <!-- ============ 本次更新 ============ -->
+  <div class="card">
+    <h2>本次更新</h2>
+    <ul>
+      <li>「我 → 关于」新增<b>检查更新</b>，可直接跳到本页下载</li>
+      <li>打赏入口重做，用的是应用原生字体，不再贴图</li>
+      <li>桌面小组件第二行改为「命中 N 次 · 报警 M 次 · 时间」</li>
+      <li>跨天时间显示到分钟（26/11/16 14:21）</li>
+    </ul>
+  </div>
+
+  <!-- ============ 安装说明 ============ -->
+  <div class="card">
+    <details>
+      <summary>安装说明（首次必看）</summary>
+      <ul>
+        <li>用手机浏览器下载，微信内点链接会被拦，请复制到浏览器打开</li>
+        <li>下载完成后点安装，系统提示「未知来源」时选择允许</li>
+        <li><b>不要先卸载旧版</b>，直接覆盖安装，数据才会保留</li>
+        <li>装好打开 App →「我」页确认 5 项权限仍是「已授权」</li>
+        <li>如果桌面小组件尺寸没变，删掉重新拖一个</li>
+      </ul>
+    </details>
+  </div>
+
+  <!-- ============ 历史版本 ============ -->
+  <div class="card old">
+    <h2>历史版本</h2>
+    <ul>
+      <li><a href="shaoling-v1.2.16.apk" download>v1.2.16</a><span>2026-11-21 · 692KB</span></li>
+      <li><a href="shaoling-v1.2.15.apk" download>v1.2.15</a><span>2026-11-21 · 692KB</span></li>
+      <li><a href="shaoling-v1.2.14.apk" download>v1.2.14</a><span>2026-11-21 · 600KB</span></li>
+      <li><a href="shaoling-v1.2.13.apk" download>v1.2.13</a><span>2026-11-18 · 425KB</span></li>
+      <li><a href="shaoling-v1.2.11.apk" download>v1.2.11</a><span>2026-11-18 · 424KB</span></li>
+    </ul>
+  </div>
+
+  <!-- ============ 国内镜像 ============ -->
+  <div class="card warm mirror">
+    <h2>国内镜像（主站慢时用）</h2>
+    <ul>
+      <li><a href="https://wwbfj.lanzouw.com/iLwDm4gvjopa" target="_blank" rel="noopener">蓝奏云下载</a>　密码 <span class="kbd">6t0w</span></li>
+      <li>镜像页有广告与中转页，主站能下优先后者</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    哨铃 · 个人自用的短信强提醒工具<br>
+    不联网 · 不收集数据 · 无广告 · 不申请 INTERNET 权限
+  </div>
+</div>
+</body>
+</html>
